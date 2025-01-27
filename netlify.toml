@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm install && tsc && vite build"
   publish = "dist"
   functions = "netlify/functions"
 
