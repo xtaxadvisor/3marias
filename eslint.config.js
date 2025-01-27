@@ -33,10 +33,8 @@ export default [
         'warn',
         { allowConstantExport: true }
       ],
-      // ES2024 features
       'no-unused-private-class-members': 'error',
       'logical-assignment-operators': ['error', 'always'],
-      // TypeScript specific
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-import-type-side-effects': 'error',
       '@typescript-eslint/consistent-type-exports': 'error'

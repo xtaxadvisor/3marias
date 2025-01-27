@@ -1,25 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
+    "target": "ES2022",                         // Future-proof with the latest ECMAScript features
+    "module": "ESNext",                         // Use ESNext modules for modern bundlers
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],   // Include DOM and latest ECMAScript features
+    "jsx": "react-jsx",                         // Optimal for React with TypeScript
+    "moduleResolution": "Node",                // Standard resolution
+    "strict": true,                             // Enable all strict type-checking options
+    "noUnusedLocals": true,                     // Report unused variables
+    "noUnusedParameters": true,                 // Report unused function parameters
+    "noFallthroughCasesInSwitch": true,         // Ensure all switch cases are handled
+    "resolveJsonModule": true,                  // Allow importing JSON files
+    "baseUrl": ".",                             // Enable baseUrl for path aliasing
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"]                        // Setup aliasing for cleaner imports
+    },
+    "isolatedModules": true,                    // Ensures files can be transpiled in isolation
+    "skipLibCheck": true                        // Speeds up builds by skipping library type checks
   },
-  "include": ["src"],
+  "include": ["src"],                           // Only include files in the "src" folder
+  "exclude": ["node_modules", "dist"],          // Exclude common build output folders
   "references": [{ "path": "./tsconfig.node.json" }]
 }
