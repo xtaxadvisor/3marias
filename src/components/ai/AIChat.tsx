@@ -3,7 +3,7 @@ import { Bot, X } from 'lucide-react';
 import { AIMessageList } from './chat/AIMessageList';
 import { AIMessageInput } from './chat/AIMessageInput';
 import { AIWelcomeMessage } from './AIWelcomeMessage';
-import { AISuggestions } from './AISuggestions';
+import { AISuggestions } from '../AISuggestions';
 import { AIContextualHelp } from './chat/AIContextualHelp';
 import { useAI } from '../../hooks/useAI';
 import { detectContext, getContextualSuggestions } from '../../utils/ai/contextDetection';

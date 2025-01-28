@@ -37,9 +37,9 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: 3001, // Change from 3000 to 3001
+    strictPort: true, // Prevents auto-assigning a different port
     open: true, // Auto-opens browser when running `npm run dev`
-    strictPort: true, // Ensures it doesn't auto-assign another port if 3000 is busy
   },
   preview: {
     port: 5000, // If using `npm run preview`, serve on port 5000
