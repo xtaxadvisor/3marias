@@ -1,16 +1,13 @@
+
 {
+
   "compilerOptions": {
-    "jsx": "react-jsx",  // Ensures proper JSX support for React
-    "esModuleInterop": true, // Enables compatibility with CommonJS modules
-    "moduleResolution": "Node",
-    "strict": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+    "jsx": "react",
+
+    // other options
+
+    "esModuleInterop": true
+
+  }
+
 }
